@@ -1,0 +1,68 @@
+@import "/src/shared/styles/variables.import";
+
+.priceResult {
+  grid-area: area-5;
+  background: $back__content;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 32px auto;
+  grid-template-areas:
+      "area-1"
+      "area-2";
+  background: $success__back;
+}
+
+.priceResultFail {
+  background: $error__back;
+  color: $error__text;
+}
+
+.legend {
+  grid-area: area-1;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  height: 24px;
+  padding-top: 4px;
+  text-align: center;
+  background: $gradient__legend;
+  color: $blue__dark-dark;
+}
+
+.legendFail {
+  background: $gradient__legend--error;
+}
+
+.rows {
+  grid-area: area-2;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rowCharacter {
+  display: grid;
+  grid-template-columns: 180px auto 84px;
+  grid-template-rows: 18px;
+  grid-template-areas: "area-1 area-2 .";
+}
+
+.characterTitle {
+  grid-area: area-1;
+  justify-self: end;
+}
+
+.characterValue {
+  grid-area: area-2;
+  justify-self: end;
+}
+
+.priceTextEmpty {
+  color: $steel__light-dark
+}
+
+.priceTextSuccess {
+  color: $text__body;
+}

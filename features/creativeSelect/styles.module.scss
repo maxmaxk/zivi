@@ -1,0 +1,67 @@
+@import "/src/shared/styles/variables.import";
+
+.option {
+  text-indent: 0;
+}
+
+.option:hover, .option.selectItem {
+  background-color: $blue__dark-light;
+  cursor: pointer;
+}
+
+.inputContainer {
+  width: 100%;
+  height: 22px;
+  position: relative;
+}
+
+.selectInput {
+  width: 100%;
+  color: $text__field;
+  background: $back__field;
+  &:hover {
+    background-color: white;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  &::after {
+    border-top-color: $mark__menu-2;
+    border-bottom-color: $mark__menu-2--hover;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    content: "";
+    display: inline-block;
+    transition: all 0.25s ease-in-out;
+    border-style: solid;
+  }
+  &.close::after {
+    border-width: 8px 4px 0 4px;
+  }
+  &.open::after {
+    border-width: 0 4px 8px 4px;
+  }
+}
+
+.optionsContainer {
+  height: 200px;
+  overflow-y: auto;
+  & > ul > li {
+    margin-left: -25px;
+  }
+  & > p {
+    color: $blue__dark-light;
+  }
+}
+
+.add {
+  margin-left: -25px;
+  cursor: pointer;
+  color: $blue__dark-light;
+  &:hover{
+    color: $link__dark--hover
+  }
+}

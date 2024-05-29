@@ -1,0 +1,31 @@
+@import "/src/shared/styles/variables.import";
+
+.popupContainer {
+  display: grid;
+  grid-template-columns: 12px auto 12px;
+  grid-template-rows: 52px auto 42px;
+  grid-template-areas:
+      "area-1 area-1 area-1"
+      ". area-2 . "
+      ". area-3 . ";
+  width: 640px;
+  background: $back__body;
+}
+
+.controls {
+  grid-area: area-3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selectContainer {
+  grid-area: area-2;
+}
+
+.textarea{
+  resize: vertical;
+  width: 100%;
+}

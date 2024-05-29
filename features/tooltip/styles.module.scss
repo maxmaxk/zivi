@@ -1,0 +1,32 @@
+@import "/src/shared/styles/variables.import";
+
+.boxTooltip {
+  position: absolute;
+}
+
+.tooltipContent {
+  display: none;
+  position: absolute;
+  top: 6px;
+  right: -8px;
+  width: 220px;
+  box-shadow: $shadow__dropdown;
+  background: $tooltip__back;
+  color: $text__body;
+  padding: 10px 8px 6px;
+  text-align: center;
+}
+
+.boxTooltip:hover > .controlTooltip, .controlTooltip:hover {
+  z-index: 102;
+  cursor: help;
+}
+
+.controlTooltip:hover + .tooltipContent, .tooltipContent:hover {
+  display: block;
+  z-index: 101;
+}
+
+.tooltipContainer {
+  position: relative;
+}

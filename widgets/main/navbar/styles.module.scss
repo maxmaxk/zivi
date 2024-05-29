@@ -1,0 +1,19 @@
+@import "/src/shared/styles/variables.import";
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  background: $back__body;
+  font-family: 'ZIVI__Bold';
+  font-size: 18px;
+}
+
+.link:first-child {
+  margin-left: 16px;
+}

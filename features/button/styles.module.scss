@@ -1,0 +1,56 @@
+@import "/src/shared/styles/variables.import";
+
+.calcButton {
+  width: 160px;
+  justify-self: end;
+}
+
+.masterCalcButton {
+  width: 180px;
+  justify-self: end;
+}
+
+.sbpButton, .orderButton, .removeButton {
+  width: 160px;
+}
+
+.accountButton, .accountButtonSuccess, .accountButtonSuccess:disabled {
+  margin-right: 6px;
+  width: 200px;
+  align-self: end;
+  color: $success__text;
+}
+
+.accountButtonNeedAccept {
+  margin-right: 6px;
+  width: 200px;
+  align-self: end;
+  color: $error__text;
+}
+
+.removeButton {
+  color: $error__text;
+}
+
+.saveButton {
+  color: $attn__text--2;
+  border-color: $border__button-attn;
+  background: $gradient__button-attn;
+  &:not([disabled]) {
+    &:hover {
+      border-color: $border__button-attn--hover;
+      background: $gradient__button-attn--hover;
+    }
+    &:active {
+      background: $gradient__button-attn--active;
+    }
+  }
+}
+
+.jourButton {
+  margin-right: 8px;
+  margin-bottom: 4px;
+  width: 160px;
+  justify-self: end;
+  align-self: end;
+}

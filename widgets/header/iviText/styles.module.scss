@@ -1,0 +1,25 @@
+@import "/src/shared/styles/variables.import";
+
+.area {
+  grid-area: area-4;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  margin-top: -10px;
+  p {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 36px;
+    color: $steel__dark-light;
+    text-shadow: $shadow__TRBL-4Blur-96;
+    &::first-letter {
+      margin-left: -2px;
+      font-family: 'ZIVI__Bold';
+      font-size: 48px;
+    }
+  }
+}

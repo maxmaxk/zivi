@@ -1,0 +1,9 @@
+@import "/src/shared/styles/variables.import";
+
+.menuItem {
+  cursor: pointer;
+  color: $steel__dark-dark;
+  &:hover {
+    color: $green__light-light;
+  }
+}

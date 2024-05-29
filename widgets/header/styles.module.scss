@@ -1,0 +1,27 @@
+@import "/src/shared/styles/variables.import";
+
+.header {
+  display: grid;
+
+  align-items: center;
+  background: $gradient__basic;
+  grid-area: header;
+  z-index: 100;
+  &.login {
+    grid-template-rows: 30px;
+    grid-template-columns: auto 40px 1200px auto;;
+    grid-template-areas:
+      ". area-2 area-3 .";
+  }
+  &.guest {
+    grid-template-rows: 30px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    grid-template-columns: auto 40px 12px 72px 24px 1092px auto;
+    grid-template-areas:
+      ". area-1 . area-2 . area-3 ."
+      ". area-1 . area-2 . area-4 .";
+  }
+}

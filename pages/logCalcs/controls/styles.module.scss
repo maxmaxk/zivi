@@ -1,0 +1,77 @@
+@import "/src/shared/styles/variables.import";
+
+.objectName {
+  grid-area: area-1;
+}
+
+.objectRequisites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  height: 24px;
+  font-size: 20px;
+  grid-area: area-2;
+}
+
+.requisiteCountTotalValue {
+  font-family: 'ZIVI__Bold';
+}
+
+.objectControls {
+  grid-area: area-3;
+  display: grid;
+  grid-template-columns: auto 420px;
+  grid-template-rows: 42px 34px;
+  grid-template-areas:
+      "area-1 area-1"
+      "area-2 area-3";
+}
+
+.requisiteCountTotalLabel, .objectControls label {
+  font-family: 'ZIVI__Thin';
+}
+
+.objectControls__set1 {
+  grid-area: area-1;
+  align-self: center;
+  justify-self: end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.objectControls__set2 {
+  grid-area: area-2;
+  align-self: start;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  &>.select {
+    width: 312px;
+  }
+}
+
+.objectControls__set3 {
+  grid-area: area-3;
+  align-self: start;
+  justify-self: end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  input {
+    width: 312px;
+  }
+}

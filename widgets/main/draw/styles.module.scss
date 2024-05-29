@@ -1,0 +1,9 @@
+@import "/src/shared/styles/variables.import";
+
+.setDraw {
+    grid-area: area-2;
+    background: $back__content;
+    padding-bottom: 10px;
+    height: 340px;
+    position: relative;
+  }

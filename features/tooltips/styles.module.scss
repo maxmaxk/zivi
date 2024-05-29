@@ -1,0 +1,36 @@
+@import "/src/shared/styles/variables.import";
+
+.p, .tooltip > p {
+  margin-bottom: 6px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.fragmentColor {
+  color: $error__text;
+}
+
+.fragmentUnderline {
+  border-bottom: solid 1px;
+}
+
+.highlight {
+  display: inline-block;
+  margin-top: 2px;
+  border: solid 1px $chrome-80;
+  padding: 1px 4px;
+  &.auto {
+    background: $attn__back;
+  }
+  &.manually {
+    background: $success__back--94;
+  }
+  &.current {
+    background: $choice__back;
+    color: $choice__text;
+  }
+  &.content {
+    background: $chrome-96;
+    color: $brown-56__58;
+  }
+}

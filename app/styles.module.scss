@@ -1,0 +1,21 @@
+.body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1240px auto;
+
+  &.login {
+    grid-template-rows: 36px 48px auto 36px;
+    grid-template-areas:
+    "header header header"
+    ". nav ."
+    ". main . "
+    "footer footer footer";
+  }
+  &.guest {
+    grid-template-rows: 84px auto 36px;
+    grid-template-areas:
+    "header header header"
+    ". main . "
+    "footer footer footer";
+  }
+}

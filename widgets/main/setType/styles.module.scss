@@ -1,0 +1,8 @@
+.setType {
+    grid-area: area-1;
+    display: grid;
+    grid-template-columns: 414px auto auto;
+    grid-template-rows: 32px;
+    grid-template-areas: "area-1 area-2 area-3";
+    align-items: center;
+}

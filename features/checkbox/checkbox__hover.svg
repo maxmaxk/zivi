@@ -1,0 +1,28 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+
+	viewBox="0 0 26 26"
+	width="24"
+	height="24"
+
+	fill="none"
+>
+	<path
+		d="
+			M 20,12
+			v6
+			a2 2 0 0 1-2 2
+			H6
+			a2 2 0 0 1-2-2
+			V6
+			a2 2 0 0 1 2-2
+			h12
+			a2 2 0 0 1 2 2
+			z
+		"
+
+		stroke-width="1"
+		stroke="hsl(138, 96%, 37%)"
+	/>
+
+</svg>

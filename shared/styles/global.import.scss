@@ -1,0 +1,312 @@
+@import "./variables.import";
+
+body {
+  background: $back__body;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font: inherit;
+  min-height: 100vh;
+  overflow-y: scroll;
+  cursor: default;
+  font-family: 'ZIVI__Regular';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-stretch: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: slashed-zero;
+  font-variant-east-asian: normal;
+  font-kerning: normal;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0;
+  text-transform: none;
+}
+
+*,
+::before,
+::after {
+	margin:         0;
+	border:         0;
+	padding:        0;
+	box-sizing:     border-box;
+	vertical-align: baseline;
+	font:           inherit;
+	font-kerning:   inherit;
+	letter-spacing: inherit;
+	word-spacing:   inherit;
+	text-indent:    inherit;
+	text-transform: inherit;
+}
+
+p { 
+  margin-bottom: 10px; 
+}
+
+:focus,
+:focus-within,
+:focus-visible {
+	outline: none;
+}
+
+h1 { font-size: 28px; line-height: 31px; margin-top: 28px; margin-bottom: 22px; }
+h2 { font-size: 24px; line-height: 27px; margin-top: 24px; margin-bottom: 18px; }
+h3 { font-size: 20px; line-height: 23px; margin-top: 20px; margin-bottom: 14px; }
+h4 { font-size: 16px; line-height: 19px; margin-top: 16px; margin-bottom: 12px; }
+h5 { font-size: 14px; line-height: 17px; margin-top: 14px; margin-bottom: 10px; }
+h6 { font-size: 12px; line-height: 15px; margin-top: 12px; margin-bottom:  8px; }
+
+h1:first-child {
+  margin-top: 12px;
+}
+
+ul {
+	margin-bottom: 10px;
+	list-style-type: none;
+	padding-inline-start: 32px;
+}
+
+ul > li {
+	margin-bottom: 4px;
+	text-indent: -9px;
+	text-align: start;
+}
+
+address {
+	font-style: normal;
+}
+
+i, em,
+.text__italic {
+	font-family: 'ZIVI__Italic';
+	font-weight: 500;
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6,
+b, strong,
+.text__bold {
+	font-family: 'ZIVI__Bold';
+	font-weight: 700;
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $blue__dark-light;
+}
+
+b i, strong i,
+i b, i strong,
+b em, strong em,
+em b, em strong,
+.text__bold--i {
+	font-family: 'ZIVI__Bold-Italic';
+	font-weight: 700;
+	font-style: italic;
+}
+
+button,
+legend {
+	font-family: 'ZIVI__Thin';
+	font-weight: 300;
+	font-style: normal;
+}
+
+a,
+button,
+select:not([multiple]),
+option,
+[type="button"],
+[type="checkbox"],
+[type="color"],
+[type="file"],
+[type="image"],
+[type="radio"],
+[type="reset"],
+[type="submit"],
+.clickable {
+	cursor: pointer;
+}
+
+textarea,
+[type="email"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="url"] {
+	cursor: text;
+}
+
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="number"],
+[type="time"],
+[type="week"] {
+	cursor: alias;
+}
+
+[type="range"] {
+	cursor: col-resize;
+}
+
+abbr[title] {
+	cursor: help;
+}
+
+:disabled,
+[disabled],
+select[disabled] {
+	cursor: not-allowed;
+}
+
+button,
+input,
+select {
+	-webkit-appearance: none;
+	-moz-appearance:    none;
+	appearance:         none;
+	height: 24px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 1px;
+}
+
+select,
+[type="date"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"] {
+	transition:  all 0.2s ease-in-out;
+	border-color: $border__field;
+	padding-left: 4px;
+}
+
+select:hover,
+[type="date"]:hover,
+[type="datetime-local"]:hover,
+[type="email"]:hover,
+[type="month"]:hover,
+[type="number"]:hover,
+[type="password"]:hover,
+[type="search"]:hover,
+[type="tel"]:hover,
+[type="text"]:hover,
+[type="time"]:hover,
+[type="url"]:hover,
+[type="week"]:hover,
+select:focus,
+[type="date"]:focus,
+[type="datetime-local"]:focus,
+[type="email"]:focus,
+[type="month"]:focus,
+[type="number"]:focus,
+[type="password"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="text"]:focus,
+[type="time"]:focus,
+[type="url"]:focus,
+[type="week"]:focus {
+	border-color: $border__field--edit;
+}
+
+select:disabled,
+[type="date"]:disabled,
+[type="datetime-local"]:disabled,
+[type="email"]:disabled,
+[type="month"]:disabled,
+[type="number"]:disabled,
+[type="password"]:disabled,
+[type="search"]:disabled,
+[type="tel"]:disabled,
+[type="text"]:disabled,
+[type="time"]:disabled,
+[type="url"]:disabled,
+[type="week"]:disabled {
+	border-color: $border__field--disabled;
+	background: $back__field--onload;
+	color: $select__color--disabled;
+}
+
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="time"] {
+	padding-left: 3px;
+}
+
+input[type="date" i]::-webkit-calendar-picker-indicator {
+	opacity: 0.5;
+	margin: 0;
+	width: 16px;
+	padding: 0;
+}
+
+button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 12px;
+	transition: all 0.25s ease-in-out;
+	border-color: $border__button;
+	background: $gradient__button;
+	color: $green__dark-dark;
+}
+
+button:hover {
+	border-color: $border__button--hover;
+	background: $gradient__button--hover;
+}
+
+button:active {
+	background: $gradient__button--active;
+}
+
+button:disabled {
+	border-color: $border__button--disabled;
+	background: $gradient__button--disabled;
+	color: $text__button--disabled;
+}
+
+a,
+a:link,
+a:visited {
+    padding-bottom: 1px;
+    border-bottom: solid 1px transparent;
+    text-decoration: none;
+    color: $link__dark;
+    cursor: pointer;
+}
+a:hover, a:link:hover, a:visited:hover {
+    border-bottom-color: $link__dark--border;
+    color: $link__dark--hover;
+}
+[type="date"]::placeholder,
+[type="datetime-local"]::placeholder,
+[type="email"]::placeholder,
+[type="month"]::placeholder,
+[type="number"]::placeholder,
+[type="password"]::placeholder,
+[type="search"]::placeholder,
+[type="tel"]::placeholder,
+[type="text"]::placeholder,
+[type="time"]::placeholder,
+[type="url"]::placeholder,
+[type="week"]::placeholder {
+	color: $text__field--disabled;
+}

@@ -1,0 +1,14 @@
+.waitIconEnabled {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-image: url(./icon.gif);
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  z-index: 9999;
+}
+
+.waitIconDisabled{
+  display: none;
+}

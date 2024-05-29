@@ -1,0 +1,14 @@
+@import "/src/shared/styles/variables.import";
+
+.downloadLink {
+  color: $steel__dark-dark;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    color: $link__dark;
+  }
+}
+
+
+
+

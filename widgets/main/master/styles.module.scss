@@ -1,0 +1,25 @@
+@import "/src/shared/styles/variables.import";
+
+.master {
+  margin-left: -12px;
+  background: $back__body;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+      "area-1"
+      "area-2";
+  width: 1240px;
+}
+
+.masterMini {
+  margin-left: -12px;
+  background: $back__body;
+  display: grid;
+  grid-template-columns: 12px auto 12px;
+  grid-template-rows: auto;
+  grid-template-areas:
+      "area-1 area-1 area-1"
+      ". area-2 .";
+  width: 1264px;
+}

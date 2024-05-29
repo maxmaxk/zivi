@@ -1,0 +1,12 @@
+@import "/src/shared/styles/variables.import";
+
+.header {
+  grid-area: area-1;
+  padding-bottom: 8px;
+  background: $gradient__legend--reverse;
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-top: 6px;
+  color: $blue__dark-light;
+  text-align: center;
+}

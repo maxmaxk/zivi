@@ -1,0 +1,23 @@
+@import "/src/shared/styles/variables.import";
+
+.edit {
+  display: grid;
+  grid-template-columns: 176px 190px;
+  grid-template-rows: 32px;
+  grid-template-areas: "area-1 area-2";
+}
+
+.input {
+  grid-area: area-2;
+  background-color: $back__field;
+  color: $text__field;
+  padding-left: 10px;
+  &:hover {
+    background-color: white;
+  }
+}
+
+.inputInvalid {
+  color: $error__text;
+  background-color: $invalid__control;
+}

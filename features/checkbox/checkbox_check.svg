@@ -1,0 +1,43 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+
+	viewBox="0 0 26 26"
+	width="24"
+	height="24"
+
+	stroke-linecap="round"
+	stroke-linejoin="round"
+
+	fill="none"
+>
+
+	<!-- Галочка. -->
+	<path
+		d="
+			M9,11
+			l3 3
+			l8-8
+		"
+
+		stroke-width="3"
+		stroke="hsl(138, 96%, 37%)"
+	/>
+
+	<!-- Квадрат. -->
+	<path
+		d="
+			M20,12
+			v6
+			a2 2 0 0 1-2 2
+			H6
+			a2 2 0 0 1-2-2
+			V6
+			a2 2 0 0 1 2-2
+			h9
+		"
+
+		stroke-width="1"
+		stroke="hsl(138, 96%, 27%)"
+	/>
+
+</svg>

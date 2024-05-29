@@ -1,0 +1,25 @@
+@import "/src/shared/styles/variables.import";
+
+.main {
+  grid-area: main;
+  & > p {
+    margin-top: 36px;
+    color: gray;
+    font-size: 28px;
+  }
+}
+
+.objectBar {
+  display: grid;
+  grid-template-columns: auto 960px;
+  grid-template-rows: 42px 34px;
+  grid-template-areas:
+      "area-1 area-3"
+      "area-2 area-3";
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  background: $back__body;
+  z-index: 1;
+}

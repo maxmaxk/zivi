@@ -1,0 +1,34 @@
+@import "/src/shared/styles/variables.import";
+
+.spec {
+  grid-area: area-6;
+  background: $back__content;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 32px auto;
+  grid-template-areas:
+      "area-1"
+      "area-2";
+}
+
+.legend {
+  grid-area: area-1;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  height: 24px;
+  padding-top: 4px;
+  text-align: center;
+  background: $gradient__legend;
+  color: $blue__dark-dark;
+}
+
+.rows {
+  grid-area: area-2;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 4px;
+  color: $steel__light-dark
+}

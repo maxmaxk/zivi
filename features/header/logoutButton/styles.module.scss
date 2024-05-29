@@ -1,0 +1,24 @@
+.logoutButton {
+  cursor: pointer;
+  &::before {
+    content:
+      url(./login-out.svg)
+      url(./login-out__hover.svg);
+    position: absolute;
+    top: -9999rem;
+    left: -9999rem;
+    opacity: 0;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+    background-image: url(./login-out.svg);
+    background-repeat: no-repeat;
+  }
+  &:hover::after {
+    background-image: url(./login-out__hover.svg);
+  }
+}

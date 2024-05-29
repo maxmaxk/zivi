@@ -1,0 +1,16 @@
+@import "/src/shared/styles/variables.import";
+
+.input {
+  background-color: $back__field;
+  color: $text__field;
+  padding-left: 4px;
+  font-family: 'ZIVI__Regular';
+  &:hover {
+    background-color: white;
+  }
+  &.inputInvalid, &:focus.inputInvalid {
+    color: $error__text;
+    background-color: $invalid__control;
+  }
+}
+

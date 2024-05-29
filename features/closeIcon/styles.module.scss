@@ -1,0 +1,41 @@
+@import "/src/shared/styles/variables.import";
+
+.closeIcon {
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  cursor: pointer;
+  z-index: 999;
+  &::before {
+    content:
+      url(./close.svg)
+      url(./close__hover.svg);
+    position: absolute;
+    top: -9999rem;
+    left: -9999rem;
+    opacity: 0;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-size: 18px 18px;
+    background-image: url(./close.svg);
+    background-repeat: no-repeat;
+  }
+  &:hover::after {
+    background-image: url(./close__hover.svg);
+  }
+  &.success::after {
+    background-color: $back__field;
+  }
+  &.fail::after {
+    background-color: $error__back;
+  }
+}
+
+
+
+

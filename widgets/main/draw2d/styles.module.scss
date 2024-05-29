@@ -1,0 +1,12 @@
+@import "/src/shared/styles/variables.import";
+
+.noModel {
+  color: $steel__light-dark;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

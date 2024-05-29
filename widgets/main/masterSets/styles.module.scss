@@ -1,0 +1,12 @@
+.masterSets {
+  grid-area: area-2;
+  display: grid;
+  grid-template-columns: 840px auto;
+  gap: 12px;
+  grid-template-rows: 34px repeat(3, auto);
+  grid-template-areas:
+      "area-1 area-2"
+      "area-3 area-2"
+      "area-4 area-5"
+      "area-6 area-7";
+}

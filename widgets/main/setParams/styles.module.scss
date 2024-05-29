@@ -1,0 +1,41 @@
+@import "/src/shared/styles/variables.import";
+
+.setParams {
+  grid-area: area-3;
+  background: $back__content;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 420px 420px;
+  grid-template-rows: 8px auto;
+  grid-template-areas:
+    "area-1 area-1"
+    "area-2 area-3";
+}
+
+.legend {
+  grid-area: area-1;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  height: 24px;
+  padding-top: 4px;
+  text-align: center;
+  background: $gradient__legend;
+  color: $blue__dark-dark;
+}
+
+.rowsLeft {
+  grid-area: area-2;
+  border-right: solid 1px $back__body;
+}
+
+.rowsRight {
+  grid-area: area-3;
+}
+
+.row {
+  min-height: 32px;
+  & > :not(:first-child) label {
+    padding-left: 10px;
+  }
+}

@@ -1,0 +1,67 @@
+@import "/src/shared/styles/variables.import";
+
+.calcs__colNum {
+  width: 46px;
+}
+.calcs__colDateTime {
+  width: 92px;
+}
+.calcs__colNomenclature {
+  width: auto;
+}
+.calcs__colClientApp {
+  width: 124px;
+}
+.calcs__colId {
+  width: 146px;
+}
+.calcs__colHashCalc {
+  width: 242px;
+}
+
+.calcsList {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 14px;
+  thead tr {
+    height: 36px
+  }
+  & > thead > tr > th:first-child {
+    white-space: pre-line;
+  }
+  th, td {
+    vertical-align: middle;
+  }
+  tbody {
+    & > :nth-child(odd) {
+      background: $chrome-96;
+    }
+    & > :nth-child(even) {
+      background: $chrome-92;
+    }
+    & > .calcRow:hover {
+      background: $under-cursor__back;
+    }
+  }
+  .calcRow td {
+    padding: 1px 5px;
+  }
+}
+
+.cellDateTime, .cellClientApp, .rowCellId, .cellHashCalc {
+  text-align: center;
+}
+
+.rowCellNum {
+  text-align: right;
+}
+
+.cellDateTime > p {
+  margin: 0;
+}
+
+.cellDateTime2 {
+  font-family: 'ZIVI__Thin';
+  font-size: 11px;
+}

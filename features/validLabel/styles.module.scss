@@ -1,0 +1,41 @@
+@import "/src/shared/styles/variables.import";
+
+.label {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 6px;
+  font-family: 'ZIVI__Thin';
+}
+
+.star {
+  padding-left: 2px;
+  color: $error__text--2;
+}
+
+.regularFont {
+  font-family: 'ZIVI__Regular';
+}
+
+.labelInvalid {
+  color: $invalid__text;
+  font-weight: bold;
+}
+
+.input {
+  background-color: $back__field;
+  color: $text__field;
+  padding-left: 4px;
+  width: 200px;
+  font-family: 'ZIVI__Regular';
+  &:hover {
+    background-color: white;
+  }
+  &.inputInvalid, &:focus.inputInvalid {
+    color: $error__text;
+    background-color: $invalid__control;
+  }
+}
+
